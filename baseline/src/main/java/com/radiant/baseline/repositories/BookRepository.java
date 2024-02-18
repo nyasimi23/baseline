@@ -1,5 +1,9 @@
 package com.radiant.baseline.repositories;
 
-public interface BookRepository {
+import org.springframework.data.repository.CrudRepository;
+
+import com.radiant.baseline.domain.Book;
+
+public interface BookRepository extends CrudRepository<Book, String> {
     
 }

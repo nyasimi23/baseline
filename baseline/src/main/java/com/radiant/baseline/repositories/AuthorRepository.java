@@ -1,6 +1,10 @@
 package com.radiant.baseline.repositories;
 
-public interface AuthorRepository {
+import org.springframework.data.repository.CrudRepository;
+
+import com.radiant.baseline.domain.Author;
+
+public interface AuthorRepository extends CrudRepository<Author, Long> {
 
     
 } 
